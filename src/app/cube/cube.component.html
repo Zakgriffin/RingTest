@@ -1,0 +1,15 @@
+radialSubdivisions
+<mat-slider id='radialSubdivisionsSlider' min='3' max='100' step='1' value='30'
+    (input)='onRadialSubdivisionsSlider($event)'></mat-slider>
+depth
+<mat-slider id='depthSlider' min='0' max='3' step='0.01' value='2' (input)='onDepthSlider($event)'></mat-slider>
+numSamples
+<mat-slider id='numSamplesSlider' min='2' max='20' step='1' value='5' (input)='onNumSamplesSlider($event)'></mat-slider>
+innerRadius
+<mat-slider id='innerRadiusSlider' min='0' max='3' step='0.01' value='2' (input)='onInnerRadiusSlider($event)'></mat-slider>
+thickness
+<mat-slider id='thicknessSlider' min='0' max='1' step='0.01' value='0.3' (input)='onThicknessSlider($event)'></mat-slider>
+curvatureMagnitute
+<mat-slider id='curvatureMagnituteSlider' min='0' max='1' step='0.01' value='0.2' (input)='onCurvatureMagnitudeSlider($event)'></mat-slider>
+
+<canvas #canvas id='canvas' style='height: 100%; width: 100%;'></canvas>
